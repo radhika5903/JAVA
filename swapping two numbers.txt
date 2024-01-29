@@ -1,0 +1,20 @@
+package Trial_Project;
+import java.util.Scanner;
+
+public class swap_two_variable3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=6;
+		int b=5;
+		int c;
+		c=a;
+		a=b;
+		b=c;
+		
+		System.out.println(a);
+		System.out.println(b);
+
+	}
+
+}
