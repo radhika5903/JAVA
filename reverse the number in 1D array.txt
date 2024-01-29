@@ -1,0 +1,22 @@
+package Trial_Project;
+import java.util.Scanner;
+public class reverse_array_numbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("WELCOME TO RR WHERE YOU CAN REVERSE THE ARRAY");
+		System.out.println("PLEASE ENTER THE ARRAY SIZE");
+		int a=sc.nextInt();
+		System.out.println("YOU WRITE"+a+"PLEASE ENTER THE ARRAY VALUE");
+		int []y=new int[a];
+		for(int i=0;i<a;i++) {
+			y[i]=sc.nextInt();
+		}
+		for(int i=a-1;i>=0;i--) {
+			System.out.println(y[i]);
+		}
+
+	}
+
+}
