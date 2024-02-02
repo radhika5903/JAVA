@@ -1,0 +1,37 @@
+import java.util.Scanner;
+  class Main{
+    public static void main(String[] args) {
+        // Lets play a game..!! Rock Paper Scissor
+        Scanner sc = new Scanner(System.in);
+        System.out.println("WELCOME TO RR GAMING...HERE YOU CAN PLAY THE ROCK,PAPER,SCISSOR GAME");
+        System.out.println("Please enter the  first integer value for rock = 0,paper = 1,scissor = 2 ");
+        int num1 = sc.nextInt();
+        System.out.println("Please enter the second integer value for rock = 0,paper = 1,scissor = 2");
+        int num2 = sc.nextInt();
+        int rock = 0;
+        int paper = 1;
+        int scissor = 2;
+        if(num1==rock && num2==paper){
+            System.out.println("Paper wins");
+        }
+        else if(num1==rock && num2==scissor){
+            System.out.println("Rock wins");
+        }
+        else if(num1==paper && num2==rock){
+            System.out.println("Paper wins");
+        }
+        else if(num1==paper && num2==scissor){
+            System.out.println("Scissor wins");
+        }
+        else if(num1==scissor && num2==rock){
+            System.out.println("Rock wins");
+        }
+        else if(num1==scissor && num2==paper){
+            System.out.println("Scissor wins");
+        }
+        else{
+            System.out.println("Sorry! You enter the wrong number" );
+        }
+    }
+}
+
