@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class profitloss{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the purchasing price of the item");
+        int pp = sc.nextInt();
+        System.out.println("Enter the selling price of the item");
+        int sp = sc.nextInt();
+        if(sp>pp){
+            double profit = sp-pp;
+            System.out.println("profit : " + profit);
+        }
+        else if (sp<pp){
+            double loss = pp-sp;
+            System.out.println("loss : " + loss);
+        }
+        else{
+            System.out.println("No loss , No profit");
+        }
+    }
+}
