@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class years {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the current year in which you are working in");
+        int current_year = sc.nextInt();
+        System.out.println("Enter the year in which you joined the organization");
+        int join_year = sc.nextInt();
+        int no_of_years = current_year - join_year;
+        if(no_of_years>3){
+            System.out.println("Congratulation! You have completed " + no_of_years + " years in this organization, So You will get the bonus of Rs.2500");
+        }
+        else{
+            System.out.println("Sorry! You will not get the bonus of Rs.2500");
+        }
+    }
+}
