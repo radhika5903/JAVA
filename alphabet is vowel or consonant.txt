@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class alphabet
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the  integer value for vowels a=0 , e=1, i=2 , o=3 , u=4 , A==5 , E==6 , I==7 , O==8 , U==9");
+		int num  = sc.nextInt();
+        if(num==0 || num==1 || num==2 || num==3 || num==4 || num==5 || num==6 || num==7 || num==8 || num==9 ){
+            System.out.println("Alphabet is a vowel");
+        }
+        else{
+            System.out.println("Alphabet is a consonant");
+        }
+    }
+}
+
