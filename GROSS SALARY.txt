@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class basicsalary {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your basic salary");
+        float basicsalary = sc.nextFloat();
+        if(basicsalary<1500){
+            float HRAsalary = 0.1f*basicsalary;
+            float DAsalary = 0.9f*basicsalary;
+            float Grosssalary = basicsalary+HRAsalary+DAsalary;
+            System.out.println("Your Gross salary  is :" + Grosssalary );
+        }
+        else{
+            float HRAsalary = 500;
+            float DAsalary = 0.98f*basicsalary;
+            float Grosssalary = basicsalary+HRAsalary+DAsalary;
+            System.out.println("Your Gross salary  is :" + Grosssalary );
+        }
+    }
+}
+
