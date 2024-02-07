@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first value");
+        float num1 = sc.nextFloat();
+        System.out.println("Enter the second value");
+        float num2 = sc.nextFloat();
+        System.out.println("Please enter the operation you want to perform in calcualtor in given values..+=0 , -=1, /=2, *=3");
+        float num3 = sc.nextFloat();
+        if(num3==0){
+            System.out.println("Addition is :: " + (num1+num2) );
+        }
+        else if(num3==1){
+            System.out.println("Subtraction is :: " + (num1-num2) );
+        }
+        else if(num3==2){
+            System.out.println("Division is :: " + (num1/num2) );
+        }
+        else if(num3==3){
+            System.out.println("Multiplicaton is :: " + (num1*num2) );
+        }
+        else{
+            System.out.println("Tou enter the wrong value");
+        }
+    } 
+}       
+
+
+
