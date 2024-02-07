@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class discount{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Number of items you have purchased");
+        int quantity = sc.nextInt();
+        System.out.println("price of one items ");
+        int price = sc.nextInt();
+        float exp;
+        if(quantity>100){
+            float discount = 0.1f*price*quantity;
+            System.out.println(discount);
+            exp = (price*quantity) - discount;
+        }
+        else{
+            exp = price*quantity;
+        }
+        System.out.println("Your total expenses is : " + exp);
+    }
+ }
+
+
+
