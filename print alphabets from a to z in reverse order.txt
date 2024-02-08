@@ -1,0 +1,13 @@
+package loops_codes;
+
+public class alphabets_in_reverse {
+    public static void main(String[] args) {
+        char i = 'z';
+        while(i>='a'){
+            System.out.println(i);
+            i--;
+        }
+        
+    }
+    
+}
