@@ -1,0 +1,18 @@
+package loops_codes;
+
+import java.util.Scanner;
+
+public class tables_in_reverse{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value");
+        int n = sc.nextInt();
+        int i = 10;
+        while(i>=1){
+            System.out.printf(" %d*%d=%d\n",  n ,i, n*i);
+            i--;
+        }
+        
+    }
+    
+}
