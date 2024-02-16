@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class count_pos_neg_zeroes {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+        int neg_count = 0;
+        int pos_count = 0;
+        int zero_count = 0;
+        do{
+            System.out.println("Enter the number");
+            int num = sc.nextInt();
+            if(num<0){
+                 neg_count++;
+            }
+            else if(num>0) {
+                 pos_count++;
+            }
+            else{
+                 zero_count++;
+            }
+            System.out.println(" DO You want to continue or not...1 for continue and 0 for not");
+            choice = sc.nextInt();
+        }while(choice==1);
+          System.out.println("Numbers of negative number entered : " + neg_count);
+          System.out.println("Numbers of positive number entered : " + pos_count);
+          System.out.println("Numbers of zeroes entered : " + zero_count);
+    }
+}
