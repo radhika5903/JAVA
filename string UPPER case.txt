@@ -1,0 +1,12 @@
+package Trial_Project;
+
+public class upper_case {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String word="rahul is a good boy";
+		String word2=word.toUpperCase();
+		System.out.println(word2);
+	}
+
+}
