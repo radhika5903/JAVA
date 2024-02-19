@@ -1,0 +1,16 @@
+package Trial_Project;
+import java.util.Scanner;
+
+public class trim_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner a=new Scanner(System.in);
+		System.out.println("enter the string ");
+		String b=a.nextLine();
+		System.out.println(b.trim());
+		
+
+	}
+
+}
