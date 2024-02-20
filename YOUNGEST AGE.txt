@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the age of Rahul");
+        int Rahulage = sc.nextInt();
+        System.out.println("Enter the age of Radhika");
+        int Radhikaage = sc.nextInt();
+        System.out.println("Enter the age of Radhiul");
+        int Radhiulage = sc.nextInt();
+        System.out.println("Enter the age of Aarohi");
+        int Aarohiage = sc.nextInt();
+        if(Rahulage<Radhikaage && Rahulage<Radhiulage && Rahulage<Aarohiage){
+            System.out.println("Rahul is youngest" + " " + Rahulage);
+        }
+        else if(Radhikaage<Rahulage && Radhikaage<Radhiulage && Radhikaage<Aarohiage){
+            System.out.println("Radhika is youngest" + " " + Radhikaage);
+        }
+        else if(Radhiulage<Radhikaage && Radhiulage<Rahulage && Radhiulage<Aarohiage){
+            System.out.println("Radhiul is youngest" + " " + Radhiulage);
+        }
+        else{
+            System.out.println("Aarohi is youngest" + " " + Aarohiage);
+        }
+    }
+}         
+        
