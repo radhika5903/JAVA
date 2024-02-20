@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class reversed
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Digits :");
+		int num = sc.nextInt();
+		int rem,sum = 0,newnum = num;
+		while(num>0)
+		{
+			rem=num%10;
+			sum=(sum*10)+rem;
+			num=num/10;
+		}
+		if(newnum == sum)
+			System.out.print("Eqaul..");
+		else			
+			System.out.print("Not Eqaul..");
+	}
+}
+
+    
