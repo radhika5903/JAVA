@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Time taken by the worker");
+        float time = sc.nextFloat();
+        if(time<2){
+            System.out.println("Worker is very  highly efficient");
+        }
+        else if(time>=2.0f && time<=3.0f){
+            System.out.println("Worker is highly efficient");
+        }
+        else if(time>3.0f && time<=4.0f){
+            System.out.println("Worker is ordered to improve his speed");
+        }
+        else if(time>4.0f && time<=5.0f){
+            System.out.println("Worker is given training to improve his speed");
+        }
+        else if(time>5){
+            System.out.println("Worker has to leave the company");
+        }
+    }
+}
