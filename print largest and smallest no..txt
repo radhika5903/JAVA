@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class maxminnum{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        do
+        {
+            System.out.print("Enter the Number :");
+            int num = sc.nextInt();        
+            if(num > max)
+            {
+                max = num;
+            }            
+            if(num < min)
+            {
+                min = num;
+            }        
+
+            System.out.println(" DO You want to continue or not...1 for continue and 0 for not");
+            choice = sc.nextInt();
+        }while(choice==1);
+          System.out.println("Largest number : " + max);
+          System.out.println("Smallest number : " + min);
+    }
+}
