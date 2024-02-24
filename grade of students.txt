@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the marks of physics");
+    float marks1 = sc.nextFloat();
+    System.out.println("Enter the marks of chemistry");
+    float marks2 = sc.nextFloat();
+    System.out.println("Enter the marks of biology");
+    float marks3 = sc.nextFloat();
+    System.out.println("Enter the marks of mathematics");
+    float marks4 = sc.nextFloat();
+    System.out.println("Enter the marks of computer");
+    float marks5 = sc.nextFloat();
+    float sum = marks1 + marks2 + marks3 + marks4 + marks5;
+    float per = (sum/500.0f)*100;
+    if(per>=90){
+        System.out.println("Congratulation! You got A grade with" + " " + per + "%" ); 
+    }
+    else if(per>=80){
+        System.out.println("Congratulation! You got B grade with" + " " + per + "%" ); 
+    }
+    else if(per>=70){
+        System.out.println("Congratulation! You got C grade with" + " " + per + "%" ); 
+    }
+    else if(per>=60){
+        System.out.println("Congratulation! You got D grade with" + " " + per + "%" ); 
+    }
+    else if(per>=40){
+        System.out.println("Congratulation! You got E grade with" + " " + per + "%" ); 
+    }
+    else if(per<40){
+        System.out.println("Congratulation! You got F grade with" + " " + per + "%" ); 
+    }
+   }  
+}         
+
+   
