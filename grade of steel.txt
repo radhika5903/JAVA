@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the hardness");
+        int hardness = sc.nextInt();
+        System.out.println("Enter the carbon content");
+        float carbon = sc.nextFloat();
+        System.out.println("Enter the tensile strength");
+        int strength = sc.nextInt();
+        if(hardness>50 && carbon<0.7f && strength>5600){
+            System.out.println("Grade of steel is 10");
+        }
+        else if(hardness>50 && carbon<0.7f){
+            System.out.println("Grade of steel is 9");
+        }
+        else if( carbon<0.7f && strength>5600){
+            System.out.println("Grade of steel is 8");
+        }
+        else if(hardness>50 && strength>5600){
+            System.out.println("Grade of steel is 7");
+        }
+        else if(hardness>50 || carbon<0.7f || strength>5600){
+            System.out.println("Grade of steel is 6");
+        }
+        else{
+            System.out.println("Grade of steel is 5");
+        }
+    }
+}
