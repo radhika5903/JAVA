@@ -1,0 +1,57 @@
+import java.util.Scanner;
+class salary{
+ public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the value...female=0 , male=1");
+    int val1 = sc.nextInt();
+    System.out.println("Enter the value...Graduate=2 , Post-Graduate=3");
+    int val2 = sc.nextInt();
+    System.out.println("Enter your year of service");
+    int val3 = sc.nextInt();
+    if(val1==1){
+        if(val2==2){
+            if(val3<10){
+                System.out.println("Your salary is 7000");
+            }
+            else if(val3>=10){
+                System.out.println("Your salary is 10000");
+            }  
+        }
+        else if(val2==3){
+            if(val3<10){
+                System.out.println("Your salary is 10000");
+            }
+            else if(val3>=10){
+                System.out.println("Your salary is 15000");
+            } 
+        }
+        else{
+            System.out.println("You are not qualified");
+        }
+    }
+    else if(val1==0){
+        if(val2==2){
+            if(val3<10){
+                System.out.println("Your salary is 6000");
+            }
+            else if(val3>=10){
+                System.out.println("Your salary is 9000");
+            }  
+        }
+        else if(val2==3){
+            if(val3<10){
+                System.out.println("Your salary is 10000");
+            }
+            else if(val3>=10){
+                System.out.println("Your salary is 12000");
+            } 
+        }
+        else{
+            System.out.println("You are not qualified");
+        }
+    }
+    else{
+        System.out.println("You enter the wrong value");
+    } 
+}
+}
