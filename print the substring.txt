@@ -1,0 +1,12 @@
+package Trial_Project;
+
+public class substring_ends {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String word="Rahul is a cute boy";
+		System.out.println(word.substring(1,9));
+
+	}
+
+}
