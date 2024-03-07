@@ -1,0 +1,16 @@
+package Trial_Project;
+import java.util.Scanner;
+
+public class replace_space_underscore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner value=new Scanner(System.in);
+		System.out.println("enter the string");
+		String a=value.nextLine();
+		System.out.println("the new string is : ");
+		System.out.println(a.replace(' ', '_'));
+
+	}
+
+}
