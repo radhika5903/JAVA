@@ -1,0 +1,13 @@
+package Trial_Project;
+
+public class char_At {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String word="rahul iss a goood boy";
+		char value=word.charAt(0);
+		System.out.println(value);
+
+	}
+
+}
