@@ -1,0 +1,22 @@
+package pattern;
+import java.util.Scanner;
+public class solid_square_rectangle_by_star {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("WELCOME TO RR PATTERN");
+		System.out.println("ENTER THE FIRST VALUE OF PATTERN IN HORIZONTAL LINE");
+		int value=sc.nextInt();
+		System.out.println("ENTER THE SECOND VALUE OF PATTERN IN VERTICAL LINE");
+		int val=sc.nextInt();
+		for(int i=0;i<value;i++) {
+			for(int j=0;j<val;j++) {
+			System.out.print("*");
+			}
+			System.out.println("   ");
+		}
+
+	}
+
+}
