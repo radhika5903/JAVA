@@ -1,0 +1,23 @@
+package oops;
+
+public class method_overloading {
+	static void wish() {
+		System.out.println("hello everyone good morning");
+	}
+	static void wish(int a) {
+		System.out.println("hello everyone good morning"+a);
+	}
+	static void wish(float a) {
+		System.out.println("hello everyone good morning"+a);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		wish();
+		wish(2);
+		wish(2.1f);
+
+	}
+
+}
