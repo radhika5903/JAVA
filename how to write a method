@@ -1,0 +1,27 @@
+package oops;
+public class method_writing {
+	static int add(int a,int b) {
+		int c;
+		if(a>b) {
+			c=a+b;
+		}
+		
+		else {
+			c=a-b;
+		
+		}
+		
+		return c;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int c;
+		int a=2;
+		int b=3;
+		c=add(a,b);
+		System.out.println(c);
+
+	}
+
+}
