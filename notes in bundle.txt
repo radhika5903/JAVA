@@ -1,0 +1,72 @@
+package Trial_Project;
+import java.util.Scanner;
+
+public class notes_bundle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("WELCOME TO RR CODING");
+		System.out.println("THIS RR CALCULATOR FIND YOUR NUMBER OF NOTES AND HOW MANY BUNDLE OF NOTES YOU WANT");
+		System.out.println("PLEASE ENTER YOUR AMOUNT");
+		float amount=sc.nextFloat();
+		System.out.println("FOR 500 NOTES PRESS 500");
+		
+		System.out.println("FOR 200 NOTES PRESS 200");
+		
+		System.out.println("FOR 100 NOTES PRESS 100");
+		
+		System.out.println("FOR 50 NOTES PRESS 50");
+		
+		System.out.println("FOR 20 NOTES PRESS 20");
+		
+		System.out.println("FOR 10 NOTES PRESS 10");
+		float amount_notes=sc.nextFloat();
+		float value_1=amount/500;
+		float value_11=value_1/100;
+		float value_2=amount/200;
+		float value_22=value_2/100;
+		float value_3=amount/100;
+		float value_33=value_3/100;
+		float value_4=amount/50;
+		float value_44=value_4/100;
+		float value_5=amount/20;
+		float value_55=value_5/100;
+		float value_6=amount/10;
+		float value_66=value_6/100;
+		
+		if(amount_notes==500) {
+			System.out.println("YOU NEED"+value_1);
+			System.out.println("YOU NEED NOTES BUNDLE"+value_11);
+		}
+		else if(amount_notes==200) {
+			System.out.println("YOU NEED"+value_2);
+			System.out.println("YOU NEED NOTES BUNDLE"+value_22);
+		}
+		else if(amount_notes==100) {
+			System.out.println("YOU NEED"+value_3);
+			System.out.println("YOU NEED NOTES BUNDLE"+value_33);
+		}
+		else if(amount_notes==50) {
+			System.out.println("YOU NEED"+value_4);
+			System.out.println("YOU NEED NOTES BUNDLE"+value_44);
+		}
+		else if(amount_notes==20) {
+			System.out.println("YOU NEED"+value_5);
+			System.out.println("YOU NEED NOTES BUNDLE"+value_55);
+		}
+		else if(amount_notes==10) {
+			System.out.println("YOU NEED"+value_6);
+			System.out.println("YOU NEED NOTES BUNDLE"+value_66);
+		}
+		else  {
+			System.out.println("PLEASE ENTER THE VALID NUMBER ");
+			
+		}
+		System.out.println("YOUR CODE RUN SUCCESSULLY IN RR TERMINAL");
+		System.out.println("THANK YOU FOR USING RR CALCULAOR");
+	
+
+	}
+
+}
