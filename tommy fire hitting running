@@ -1,0 +1,27 @@
+package oops;
+
+class tommy{
+	
+	public void hitting() {
+		System.out.println("tommy hitting");
+	}
+	public void running() {
+		System.out.println("tommy running");
+	}
+	public void fire() {
+		System.out.println("tommy fire");
+	}
+}
+public class tommy_fire_hitting_running {
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		tommy r=new tommy();
+		r.hitting();
+		r.running();
+		r.fire();
+		
+	}
+
+}
