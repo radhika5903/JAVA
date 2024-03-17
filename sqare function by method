@@ -1,0 +1,27 @@
+package oops;
+
+public class sqre_function {
+	public static void side(int a,int b) {
+		int c=a*b;
+		System.out.format("THE SIDE OF THE SQUARE IS %d  \n",c);
+		}
+	public static void area(int side) {
+		int c=side*side;
+		System.out.format("THE AREA OF THE SQUARE IS %d  \n",c);
+		}
+	public static void perimeter(int side) {
+		int c=side*side;
+		System.out.format("THE PERIMETR OF THE SQUARE IS %d  \n",c);
+		}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		side(2,3);
+		area(3);
+		perimeter(5);
+		
+
+	}
+
+}
