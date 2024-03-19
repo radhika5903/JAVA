@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ATMbalance {
+    public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter 1 to withdraw the money");
+        System.out.println("Enter 2 to deposit the money");
+        System.out.println("Enter 3 to check the balance");
+        int a = sc.nextInt();
+        int total_amnt = 14000;
+        if(a==1){
+            System.out.println("Enter the amount you want to withdraw");
+            int withdraw_amnt = sc.nextInt();
+            int  current_balance = total_amnt-withdraw_amnt ;
+            System.out.println("Your current balance is : " + current_balance );
+        }
+        else if(a==2){
+            System.out.println("Enter the amount you want to deposit");
+            int deposit_amnt = sc.nextInt();
+            int current_balance = total_amnt+deposit_amnt ;
+            System.out.println("Your current balance is : " + current_balance );
+        }
+        else if (a==3){
+            int current_balance = total_amnt ;
+            System.out.println("Your current balance is : " + current_balance );
+        }
+    }
+    }
