@@ -1,0 +1,38 @@
+package oops;
+class myEmployee{
+	private int id;
+	private String name;
+	
+	public void setname(String s) {
+		 name=s;
+		}
+	public String getname(){
+		return name;
+		
+	}
+	
+	public void setid(int i) {
+		id=i;
+		}
+	public int getid(){
+		return id;
+		
+	}
+}
+public class getter_setter_method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		myEmployee rr=new myEmployee();
+		//rr.id=3;
+		//rr.name="Rahul";
+		rr.setname("rahul");
+		rr.setid(19);
+		
+		System.out.println(rr.getname());
+		System.out.println(rr.getid());
+		
+
+	}
+
+}
