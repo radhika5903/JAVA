@@ -1,0 +1,54 @@
+package oops;
+class employeee{
+	private int id;
+	private String name;
+	private String designation;
+	private String company;
+	public void setid(int i) {
+		id=i;
+	}
+	public int getid() {
+		return id;
+	}
+	public void setname(String s) {
+		name=s;
+	}
+	public String getname() {
+		return name;
+	}
+	public void setdesignation(String s) {
+		designation=s;
+	}
+	public String getdesignation() {
+		return designation;
+	}
+	public void setcompany(String s) {
+		company=s;
+	}
+	public String getcompany() {
+		return company;
+	}
+	public String rostring() {
+		 String str = "Employee: [id = " + getid() + ", name = " + getname() + ", designation = " + getdesignation() + ", company = " + getcompany() + "]";
+		return str;
+	}
+	
+	
+	
+	
+}
+public class employee_name_desina_comp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		employeee ee=new employeee();
+		ee.setid(12);
+		ee.setname("Rahul Gupta");
+		ee.setdesignation("full stack ");
+		ee.setcompany("RR pvt.lmt");
+		System.out.println(ee.rostring());
+		
+
+	}
+
+}
