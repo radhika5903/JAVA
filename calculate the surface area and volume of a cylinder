@@ -1,0 +1,46 @@
+ package oops;
+import java.util.Scanner;
+class mycylinder{
+	private int area;
+	private int height;
+	private double a;
+	public void setarea(int area) {
+		this.area=area;
+	}
+	public void setheight(int height) {
+		this.height=height;
+	}
+	public int getarea() {
+		return area;
+	}
+	public int getheight() {
+		return height;
+	}
+	public double surfacearea() {
+		a=2*3.14*area*height+2*area*3.14*area;
+		return a;
+	}
+	public double volume() {
+		a=height*area*3.14*area;
+		return a;
+	}
+	
+	
+
+}
+public class calculate_surface_area_volume {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		mycylinder c=new mycylinder();
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		c.setarea(a);
+		c.setheight(b);
+		System.out.println(c.surfacearea());
+		System.out.println(c.volume());
+
+	}
+
+}
