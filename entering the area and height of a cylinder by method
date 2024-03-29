@@ -1,0 +1,36 @@
+package oops;
+import java.util.Scanner;
+class cylinder{
+	private int area;
+	private int height;
+	public void setarea(int area) {
+		this.area=area;
+	}
+	public void setheight(int height) {
+		this.height=height;
+	}
+	public int getarea() {
+		return area;
+	}
+	public int getheight() {
+		return height;
+	}
+	
+
+}
+public class area_of_cylinder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		cylinder c=new cylinder();
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		c.setarea(a);
+		c.setheight(b);
+		System.out.println(c.getarea());
+		System.out.println(c.getheight());
+
+	}
+
+}
