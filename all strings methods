@@ -1,0 +1,43 @@
+package Trial_Project;
+import java.util.Scanner;
+public class all_string_methods{
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter your string");
+		String a=sc.nextLine();
+		// to find length of the string
+		int b=a.length();
+		System.out.format("the length of your string is %d \n",b);
+		// to do lower case of all the string
+		System.out.println(a.toLowerCase());
+		// TO DO ALL CASE TO UPPER
+		System.out.println(a.toUpperCase());
+		// to do trim of the string
+		System.out.println(a.trim());
+		// to print the substring
+		System.out.println(a.substring(3));
+		// to print substring by start and end value
+		System.out.println(a.substring(2,4));
+		// to replace the string or a charcter
+		System.out.println(a.replace("rahul","radhiul"));
+		// startsWith
+		System.out.println(a.startsWith("s"));
+		// endsWith
+		System.out.println(a.endsWith("l"));
+		// charAt
+		System.out.println(a.charAt(4));
+		// indexOf
+		System.out.println(a.indexOf("ul"));
+		// indexOf by ignoring
+		System.out.println(a.indexOf("h",5));
+		//lastIndexOf
+		System.out.println(a.lastIndexOf("h"));
+		// ignoring lastIndexOf
+		System.out.println(a.lastIndexOf("h",5));
+		// equals
+		System.out.println(a.equals("h"));
+		// equalsIgnoreCase
+		System.out.println(a.equalsIgnoreCase("rahul"));
+		
+	}
+}
