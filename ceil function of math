@@ -1,0 +1,15 @@
+package oops;
+import java.util.Scanner;
+public class using_ciel_by_math {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		float a=sc.nextFloat();
+		float b=sc.nextFloat();
+		System.out.println("the nearest number is "+Math.ceil(a));
+		
+
+	}
+
+}
