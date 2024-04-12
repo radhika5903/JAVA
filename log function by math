@@ -1,0 +1,18 @@
+package oops;
+import java.util.Scanner;
+public class finding_log_by_math {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		System.out.println("the log of the number is "+Math.log(a));
+		System.out.println("the log of the number is "+Math.log(b));
+		System.out.println("the log of the number is "+Math.log10(a));
+		System.out.println("the log of the number is "+Math.log10(b));
+		
+
+	}
+
+}
