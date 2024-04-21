@@ -1,0 +1,23 @@
+package Trial_Project;
+import java.util.*;
+public class to_find_smallest_in_array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value");
+		int val=sc.nextInt();
+		int a[]=new int[val];
+		
+		for(int i=0;i<val;i++) {
+			a[i]=sc.nextInt();
+		}
+		int min=a[0];
+		for(int i=1;i<val;i++) {
+			min=Math.min(min, a[i]);
+		}
+		System.out.println(min);
+
+	}
+
+}
