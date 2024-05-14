@@ -1,0 +1,252 @@
+# Import QRCode from pyqrcode
+import pyqrcode
+import png
+from pyqrcode import QRCode
+import PIL
+import os
+
+print("enter your choices in  the given integer ")
+print("1-shoppping , 2-song play ,3- world pakages,4-resturant,5-for booking the ticket")
+w=int(input("enter  the value"))
+if(w==1):
+   import pyqrcode
+   import png
+   from pyqrcode import QRCode
+   import PIL
+   import os
+   a=input("enter your name")
+
+#enter the uid number
+   b=input("enter ur uid")
+
+#enter the product name
+   c=input("enter ur product name")
+
+#enter the product brand
+   d=input("enter ur product brand")
+
+#enter the price
+   e=input("enter ur price")
+
+#Concatination of the value which is stored in the  variable s
+
+   s= ("name"+ ' - ' +a) +' | '+ ("uid"+' - ' +b) +' | '+ ("product name" +' - '+ c) +' | '+("product brand" + ' - ' + d)+ ' | ' +("price"+' - '+ e)
+
+# Generate QR code
+   url = pyqrcode.create(s)
+  
+# Create and save the svg file naming "myqr.svg"
+   url.svg("shopping.svg", scale = 8,background='#F0F8FF')
+  
+# Create and save the png file naming "myqr.png"
+   url.png('shopping.png', scale = 6,background='#FF6103')
+
+# using elif function
+
+elif w==2: 
+    
+# importing the modules
+
+  import pyqrcode
+  import png
+  from pyqrcode import QRCode
+  import PIL
+  import os
+# put the link and save in the o variable
+
+  O="https://youtu.be/c20XsM9BWEM"
+# generate qr code
+
+  url = pyqrcode.create(O)
+
+# Create and save the svg file naming "new.svg"
+
+  url.svg("song_1.svg", scale =8)
+
+# Create and save the png file naming "myqr.png"
+
+  url.png('song_1.png',scale = 6,background='#A52A2A')
+
+# using elif function
+
+elif w==3:
+  
+# generating qrcode
+
+  import pyqrcode
+  import png
+  from pyqrcode import QRCode
+  import PIL
+  import os
+
+#by the use of print function we can print some comments
+
+  print("enter your locatiion where you want to go")
+  print("1-spain, 2-america,3-russsia,4-dubai")
+  world=int(input("enter your location"))
+# then we again use the nested if 
+
+  if world==1:
+# importing the modules
+
+    import pyqrcode
+    import png
+    from pyqrcode import QRCode
+    import PIL
+    import os
+#we entring the price
+
+    lo="the price of the paris toor is $9876"
+    #generating qr code
+    
+    url = pyqrcode.create(lo)
+    
+    #create and save the file naming"paris.svg"
+    
+    url.svg("paris.svg", scale =8)
+    #create and save the png file naming"paris.png"
+    
+    url.png('paris.png',scale = 6,background='#458B00')
+    #using the elif function
+    
+  elif world==2:
+      #importing the module
+    
+    import pyqrcode
+    import png
+    from pyqrcode import QRCode
+    import PIL
+    import os
+    
+    #we are giving the comment in ""
+    
+    lo="the price of the america toor is $7865098"
+    
+    #generating qr code
+    
+    url = pyqrcode.create(lo)
+    
+    #create and save the file naming "america.svg"
+    
+    url.svg("america.svg", scale =8)
+    
+    #create and save the file naming "america.png"
+    
+    url.png('america.png',scale = 6,background='#3D59AB')
+    
+    #using the elif function
+  
+  elif world==3:
+     
+      #importing the module
+    
+    import pyqrcode
+    import png
+    from pyqrcode import QRCode
+    import PIL
+    import os
+    
+    #we are giving the comment in "" 
+    
+    lo="the price of the russia toor is $65098"
+    
+    #generating qr code
+    
+    url = pyqrcode.create(lo)
+    
+    #create and save the file naming "russia.svg"
+    
+    url.svg("russia.svg", scale =8)
+    
+    #create and save the file naming "russia.png"
+    
+    url.png('russia.png',scale = 6,background='#8B6914')
+    
+    #using elif function
+  
+  elif world==4:
+    
+      #importing the module
+    
+    import pyqrcode
+    import png
+    from pyqrcode import QRCode
+    import PIL
+    import os
+    
+    #we are giving the comment in ""
+    
+    lo="the price of the dubai toor is $9876345"
+    
+    #generatng the qr code
+    
+    url = pyqrcode.create(lo)
+    
+    #create and save the file naming "dubai.svg"
+    
+    url.svg("dubai.svg", scale =8)
+    
+    #create and save the file naming "dubai.png"
+    
+    url.png('dubai.png',scale = 6,background='#808080')
+
+elif w==4:
+    
+    #importing the module 
+    
+    import pyqrcode
+    import png
+    from pyqrcode import QRCode
+    import PIL
+    import os
+    
+    #we are giving the comment in ""
+    
+    lo="RRTNK resturant services: we are providing a good quality food everything available 24X7 services"
+    
+    #genarting the qr code
+    
+    url = pyqrcode.create(lo)
+    
+    #create and save the file naming "resturant.svg"
+    
+    url.svg("resturant.svg", scale =8)
+    
+    #create and save the file naming "resturant.png"
+    
+    url.png('resturant.png',scale = 6,background='#FFC125')
+    
+elif w==5: 
+    
+# importing the modules
+
+  import pyqrcode
+  import png
+  from pyqrcode import QRCode
+  import PIL
+  import os
+# put the link and save in the o variable
+  a=input("enter your name")
+  
+  b=input("enter your mobile number")
+  
+  c=input("aadhar number")
+  
+  
+
+  O=("name"+ ' - ' +a) +' | '+ ("mobile  number"+' - ' +b) +' | ' +("aadhaar number" +' - '+ c)
+
+# generate qr code
+
+  url = pyqrcode.create(O)
+
+# Create and save the svg file naming "new.svg"
+
+  url.svg("ticket.svg", scale =8)
+
+# Create and save the png file naming "myqr.png"
+
+  url.png('ticket.png',scale = 6,background='#B23AEE')
+  
+else:
+  print("you enter the wrong number")
